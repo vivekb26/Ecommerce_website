@@ -1,0 +1,17 @@
+{% extends 'ecom/base.html' %}
+
+{% load crispy_forms_tags %}
+
+<!-- title -->
+    {% block title %}
+    Logout
+    {% endblock title %}
+
+<!-- body -->
+    {% block body %}
+    <div>
+        <h1>You are Logged out</h1>
+        <h2><a href="{% url 'login' %}">Login again</a></h2>
+
+    </div>
+    {% endblock body %}

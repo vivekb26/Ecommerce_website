@@ -1,0 +1,20 @@
+{% extends 'ecom/base.html' %}
+
+{% load crispy_forms_tags %}
+
+<!-- title -->
+    {% block title %}
+    Register
+    {% endblock title %}
+
+<!-- body -->
+    {% block body %}
+    <div>
+        <h1>Register</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    {% endblock body %}

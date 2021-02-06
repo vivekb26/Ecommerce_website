@@ -1,0 +1,27 @@
+{% extends 'ecom/base.html' %}
+{% load static %}
+{% load humanize %}
+
+    {% block title %}
+    Store
+    {% endblock title %}
+
+    {% block body %}
+    <h1>Store</h1>
+    <div class="row">
+        {% for product in product %}
+        <div class="col-lg-4">
+			<img class="thumbnail" src="{{ product.product_image.url }}">
+			<div class="box-element product">
+                <!-- <h6><strong>Product</strong></h6> -->
+                <h6><strong>{{ product.product_name }}</strong></h6>
+                <hr>
+                
+                <button data-product="{{ product.id }}" data-action = 'add' class=" btn btn-outline-secondary add-btn update-cart " >Add to Cart</button>
+                <a class="btn btn-outline-sucess" href="{% url 'product_detail' pk=product.pk %}" >View</a>
+                <h5   style="font-size: 1rem; float:right;">Price {{ product.product_price|intcomma }}Rs </h5>
+			</div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock body %}

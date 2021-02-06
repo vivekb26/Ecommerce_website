@@ -1,2 +1,2 @@
-# Ecommerce_website
- Ecommerce website with log in / log out functionality , add to cart functality and more..
+# Ecommerce_Website_Electronicart
+Ecommerce website based on django framework.
