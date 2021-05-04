@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": "virtual_environment/bin/activate"
+		"python.pythonPath": "virtual_env/bin/python"
 	}
 }

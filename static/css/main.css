@@ -19,7 +19,7 @@ h6 {
 }
 
 .thumbnail {
-	width: 100px;
+	width: 300px;
 	height: 200px;
 	-webkit-box-shadow: -1px -3px 5px -2px rgba(214, 214, 214, 1);
 	-moz-box-shadow: -1px -3px 5px -2px rgba(214, 214, 214, 1);
@@ -107,4 +107,8 @@ h6 {
 	background-color: red;
 
 
+}
+
+.responsive_text {
+	font-size: 1.3vw;
 }
